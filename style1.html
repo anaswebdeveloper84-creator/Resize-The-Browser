@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Media Queries Demo</title>
+    <style>
+    
+    body {
+
+          bacground: white;
+          font-family: arial, sans-serif;
+          text-align: center;
+          padding: 50px;
+        }
+
+        h1 {  
+            color:black;
+        }
+  
+         /* Mobile (<=600px) */
+         @media (max-width:600px) {
+            body {background:lightgreen;}
+            h1{color:darkgreen;font-size: 18px;}
+         }
+ 
+        /*tablet (601px-900px)*/
+        @media (min-width:601px) and (max-width:900px) {
+        body {background:lightblue;}
+        h1{color:darkblue;font-size:24px;}    
+        }
+        /* desktop (>=901px) */
+        @media(min-width:901px) {
+        body {background: lightcoral;}
+        h1{color:white;font-size: 32px;}
+        }
+
+        </style>
+        </head>
+        <body>
+        <h1> Resize the browser</h1>
+        <p>watch background & text style change on different screens!</p>
+        </boby>
+</html>
